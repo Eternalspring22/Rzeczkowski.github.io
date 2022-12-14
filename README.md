@@ -11,4 +11,4 @@ The projects reflect my personal *interests* and *passions*:
 + Last Mile Mobility – Urban Architecture
 
 
-[Check out my Portfolios] (https://github.com/Eternalspring22/Rzeczkowski.github.io.git)
+[Check out my Portfolios](https://github.com/Eternalspring22/Rzeczkowski.github.io.git)
