@@ -3763,14 +3763,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #6BD0FF; /* underline not selecrted light blue */
+				background: #000019; /* underline not selecrted light blue */
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #000019 , #000019);
-				background-image: -webkit-linear-gradient(to right, #000019 , #000019);
-				background-image: -ms-linear-gradient(to right, #000019 , #000019);
-				background-image: linear-gradient(to right, #000019 , #000019);
+				background-image: -moz-linear-gradient(to right, #6BD0FF, #6BD0FF);
+				background-image: -webkit-linear-gradient(to right, #6BD0FF, #6BD0FF);
+				background-image: -ms-linear-gradient(to right, #6BD0FF, #6BD0FF);
+				background-image: linear-gradient(to right, #6BD0FF, #6BD0FF);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
