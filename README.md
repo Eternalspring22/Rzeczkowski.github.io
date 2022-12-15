@@ -9,6 +9,7 @@ The projects reflect my personal *interests* and *passions*:
 + Investments – Advisory
 + Investments – Industry
 + Last Mile Mobility – Urban Architecture
++ Domestic Violence/Abuse
 
 
-[Check out my Portfolios](https://github.com/Eternalspring22/Rzeczkowski.github.io.git)
+[Check out my Portfolios](https://eternalspring22.github.io/Rzeczkowski.github.io/)
