@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #2C3DE3, #2CB4E3);
-				background-image: -webkit-linear-gradient(to right, #2C3DE3, #2CB4E3);
-				background-image: -ms-linear-gradient(to right, #2C3DE3, #2CB4E3);
-				background-image: linear-gradient(to right, #2C3DE3, #2CB4E3);
+				background-image: -moz-linear-gradient(to right, #0918ab, #0918ab);
+				background-image: -webkit-linear-gradient(to right, #0918ab, #0918ab);
+				background-image: -ms-linear-gradient(to right, #0918ab, #0918ab);
+				background-image: linear-gradient(to right, #0918ab, #0918ab);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -1915,7 +1915,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: #05077d !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2444,7 +2444,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #0bb811;
 			content: '\f00c';
 		}
 
@@ -3524,7 +3524,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #071ce0;
+		background: #010317;
 		cursor: default;
 		height: 100vh;
 		left: 0;
