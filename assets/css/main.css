@@ -3505,7 +3505,7 @@ input, select, textarea {
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: rgba(255, 255, 255, 0.35); /* shade was 15% now 35 */
 	}
 
 		#footer > .inner a:hover {
@@ -3763,14 +3763,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #00009A; /* underline not selecrted deep blue */
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #FF611D , #006B00);
-				background-image: -webkit-linear-gradient(to right, #FF611D , #006B00);
-				background-image: -ms-linear-gradient(to right, #FF611D , #006B00);
-				background-image: linear-gradient(to right, #FF611D , #006B00);
+				background-image: -moz-linear-gradient(to right, #000019 , #000019);
+				background-image: -webkit-linear-gradient(to right, #000019 , #000019);
+				background-image: -ms-linear-gradient(to right, #000019 , #000019);
+				background-image: linear-gradient(to right, #000019 , #000019);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
