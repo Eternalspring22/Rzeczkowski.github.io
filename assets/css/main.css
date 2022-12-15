@@ -3763,7 +3763,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #00009A; /* underline not selecrted deep blue */
+				background: #6BD0FF; /* underline not selecrted light blue */
 			}
 
 			#sidebar nav a:after {
