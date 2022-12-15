@@ -2536,15 +2536,15 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #FF611D ;
+					color: #FF611D ; /* orange */
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: #CCCFD3; /* Was deepish purple now Gray */
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #5052b5;
+					color: #5052b5; /* Projects off bluish, CHANGE to BLUE */
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -3244,7 +3244,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #CCCFD3;
 		}
 
 		.wrapper.style2 {
