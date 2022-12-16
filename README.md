@@ -2,6 +2,8 @@
 
 This repository is the capstone project for [Google Data Analytics Certificate.](https://www.coursera.org/professional-certificates/google-data-analytics)
 
+I am looking for a full time Data Analyst position in the Minneapolis area.
+
 The projects reflect my personal *interests* and *passions*:
 + Capital Markets
 + Macro Economy
