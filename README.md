@@ -1,6 +1,6 @@
 # Data-Analyst-Portfolio
 
-This repository is the capstone project for [Google Data Analytics Certificate.](https://www.coursera.org/professional-certificates/google-data-analytics)
+This repository is the capstone project for [Google Data Analytics Certificate.](https://www.coursera.org/account/accomplishments/verify/T92A2PTGNDUB)
 
 I am looking for a full time Data Analyst position in the Minneapolis area.
 
