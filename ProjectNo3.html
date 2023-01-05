@@ -78,12 +78,12 @@
 									<li>Projections of child support my ex-wife would have to pay me.</li>
 								</ul>
 							<p style="margin-left: 50px;">It is January of 2022. My ex-wife has asked the Baker Tilly partner to use her 2020 income of $190K as a placeholder for her 2021 income. We know that her 2021 Income was $385K.</p>
-							<p style="margin-left: 50px;">Unable to hire a forensic accountant, I was dealing with the fraud in progress myself as I was looking for work. As a trailing spouse I had no meaningful income. However, a Certified Rehabilitation Counselor for a few thousand dollars was willing to make up a number for my income for the respondent. The man has not seen me, not spoken with me, just looked at my CV and claimed I can easily make $100K a year. I hope my future employer takes a note of this.</p>
+							<p style="margin-left: 50px;">Unable to hire a forensic accountant, I was dealing with the fraud in progress myself as I was looking for work. As a trailing spouse I had no meaningful income. However, a Certified Rehabilitation Counselor for a few thousand dollars was willing to make up a number for my income for the respondent. The man has not seen me, not spoken with me, just looked at my CV and claimed I can easily make $100K to $125K a year. I hope my future employer takes a note of this.</p>
 							<p style="margin-left: 50px;">Baker Tilly Partner, using 2020 income in 2022 as a placeholder for 2021 income for my ex-wife, and a made-up number for my income calculated that I should receive $241 in monthly child support.</p>
 							<h3>June 21 2022</h3>
 							<p style="margin-left: 50px;">Judge rules that I should receive $241 in monthly child support and nothing else. Judge cites verbatim the supporting numbers used by the Baker Tilly Partner.</p>
-							<p style="margin-left: 50px;">As this GitHub project demonstrates, having completed the Google Data Analyst Certificate, I am working on building up a portfolio of projects to woo an employer. I am NO Certified Rehabilitation Counselor. If I was supposed to be paid $100K for this, please let me know.</p>
-							<p>Incomplete as it is, we have all the data for this project. The question is how do all the data points make sense? Is there anything fraudulent about this? Can we demonstrate the fraud and calculate its impact?</p>
+							<p style="margin-left: 50px;">As this GitHub project demonstrates, having completed the Google Data Analyst Certificate, I am working on building up a portfolio of projects to woo an employer. I am NO Certified Rehabilitation Counselor. If I was supposed to be paid $100K to $125K for this analysis, please let me know.</p>
+							<p>Incomplete as it is, we have all the data for this project. The question is how do all the data points make sense? Is there anything fraudulent about this? If there is, can we demonstrate the fraud and calculate its impact?</p>
 
 							<h2>Process</h2>
 							<p>To make sense of the data I will need to understand all the moving parts and implications of:</p>
@@ -102,7 +102,45 @@
 							<p>Unfortunately, it appears to have worked. In each instance, the Judge has rubberstamped the Baker Tilly Provided numbers and regurgitated them in so called Findings of Facts or his Rulings.</p>
 							<h3>Enough about Baker Tilly. Back to data cleaning and organizing.</h3>
 
+							<p>To make sure I have all the moving parts of the mortgage I created a Loan Amortization Schedule in Excel. <a href="OurHouseMortgage.xlsx">Click Here to download the Excel file.</a></p>
+							<p>Mortgage amortization refers to the process of paying off a mortgage loan over time through regular payments. The term "amortization" comes from the Latin word "amortis," which means "to kill," and it refers to the gradual reduction of a debt through periodic payments.</p>
+							<p>The benefit of amortizing loan is that the monthly payment is constant throughout the life of the loan. However, the two components of the loan, principal and interest, vary over time. In early years, the amount of the payment that goes towards the interest makes up larger portion of the mortgage payment. In the later years the principal makes up larger portion of the mortgage payment. I will need this detail to identify the underlying assumptions behind the Baker Tilly Partner stated $35K of Home Mortgage Interest as allowable deduction for 2020. </p>
+							<p>Let’s see how this looks like in context of the entire loan.</p>
+							<span class="image fit"><img src="images/F_InterestDeduction.jpeg" alt="" /></span>
+							<p>Immediately, we can see that the $35K of Home Mortgage Interest for 2020 checks out and it assumes that all payments are made as scheduled.</p>
+							<p>If you look at the Excel file, on the Mortgage tab you will see the loan inputs. The last input is a toggle switch where you can set the COVID 19 Forbearance Plan to True or False. If the setting is set to True, the payments are stopped for 17 months, if the setting is set to False, the payments are made as scheduled.</p>
+							<p>The thing to watch is how the ending balance of the mortgage is impacted by turning the Forbearance on and off.</p>
+							<p>The ending balance at any given period in the file gives me the projected mortgage payoff amount.</p>
+							<p>The mortgage amortization table is the key to understanding what has happened, vs, the story the court was told of what has happened.</p>
+							<p>With mortgage amortization table in hand, we can shift to next phase of the project.</p>
+
+							<h2>Analysis</h2>
+							<p>Here is the data that presents a problem.</p>
+							<p>Our house sale closed in September 2021. According to the draft settlement statement, the mortgage payoff amount was $879K.</p>
+							<p>First red flag is that our initial mortgage amount was $876K, $3K less than the mortgage payoff amount.</p>
+							<p>Referencing the Excel amortization schedule, the ending balance of the loan in September 2021 would have been $800K if all the scheduled payments were made.</p>
+							<p>My ex-wife lawyer, when pressured to explain the surprisingly high mortgage payoff amount at the time of sale of the house, stated that my ex-wife has qualified for a COVID-19 relief program.</p>
+							<p>Wells Fargo does have a <a href="https://www.wellsfargo.com/mortgage/manage-account/payment-help/forbearance-plan/">Forbearance Plan</a> to assist people going through temporary hardship. Wells Fargo also refers to the plan as COVID-19 short-term payment assistance.</p>
+							<p>The website states that “You must contact us on a monthly basis to provide regular updates on your financial status.”</p>
+							<h3>Reconciliation</h3>
+							<p>If I assume that no payments were made for the 17-month forbearance period, my mortgage amortization schedule indicates that loan payoff amount would jump to $898K. That is $18.5K higher than the loan payoff amount provided my ex-wife lawyer. For extra credit you can look this up in the Excel file.</p>
+							<p>As stated, forbearance is intended as a short-term relief. It is plausible that during the 17-month ordeal Wells Fargo requested some nominal amount to be paid. Given the lawyer provided loan payoff amount indicates that $18.5K was paid in over the 17-month forbearance period.</p>
+							<p>In aggregate the forbearance period increased the loan payoff amount by $79K versus what it would have been had the scheduled payments been made. If the dribble of $18.5K of forbearance payment were not made, the extraction of value from the mortgage would have been $98K. I will not quibble about misrepresenting financials to the toon of $79K vs $98K. Either way financial data was significantly and materially misrepresented.</p>
+
+							<h3>Temporary Hardship</h3>
+							<p>My ex-wife lawyer has stated that she has qualified for a COVID-19 relief program.</p>
+							<p>Wells Fargo does not list on their website the qualifications for the COVID-19 short-term payment assistance or Forbearance Plan. They really do not need to.</p>
+							<p>Eight (8) of the seventeen (17) forbearance months fall into 2020 calendar year when my ex-wife tax income was $190K. Nine (9) of the (17) forbearance months fall into 2021 calendar year when my ex-wife tax income was $385K. Also our balance sheet was very strong before I filed for divorce.</p>
+							<p>Either Wells Fargo is fabulously underselling to the world of their unbelievably liniment definition of hardship, or they were being sold a bill of goods by my ex-wife. Let’s visualize this.</p>
+							<span class="image fit"><img src="images/F_Distress.jpeg" alt="" /></span>
+
+
 							<p>Interdum et malesuada </p>
+							<p>Interdum et malesuada </p>
+							<p>Interdum et malesuada </p>
+							<p>Interdum et malesuada </p>
+
+
 
 
 							<h3>Mon Year</h3>
@@ -120,13 +158,11 @@
 							<p>Interdum et malesuada </p>
 
 							<span class="image fit"><img src="images/F_LockHerUp.jpeg" alt="" /></span>
-							<span class="image fit"><img src="images/F_InterestDeduction.jpeg" alt="" /></span>
 							<p>Interdum et malesuada </p>
 							<span class="image fit"><img src="images/F_PayoffAmount.jpeg" alt="" /></span>
 							<p>Interdum et malesuada </p>
 							<span class="image fit"><img src="images/F_Forebearance.jpeg" alt="" /></span>
 							<p>Interdum et malesuada </p>
-							<span class="image fit"><img src="images/F_Distress.jpeg" alt="" /></span>
 							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
 							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 
