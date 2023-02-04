@@ -14,7 +14,7 @@ The projects reflect my personal *interests* and *passions*:
 + Investments – Industry
 + Last Mile Mobility – Urban Architecture
 + Domestic Violence/Abuse
-  * [Exposing Fraud](https://eternalspring22.github.io/Rzeczkowski.github.io/ProjectNo3.html) (Excel)
+  * [Exposing Fraud](https://eternalspring22.github.io/Rzeczkowski.github.io/Fraud.html) (Excel)
 
 
 
