@@ -9,7 +9,7 @@ The projects reflect my personal *interests* and *passions*:
 + Macro Economy
   * [Small Business Mythology](https://eternalspring22.github.io/Rzeczkowski.github.io/SBAmythFrame.html) (R)
 + Social Structures
-  * Gross Domestic Inequality (R)
+  * [Gross Domestic Inequality](https://eternalspring22.github.io/Rzeczkowski.github.io/GDI.html) (R)
 + Investments – Advisory
 + Investments – Industry
 + Last Mile Mobility – Urban Architecture
